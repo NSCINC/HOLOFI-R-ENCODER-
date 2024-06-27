@@ -11,7 +11,7 @@
         }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #000;
+            background-color: #121212; /* Background mais escuro */
             color: #FFFF00; /* Amarelo */
             margin: 0;
             padding: 0;
@@ -23,10 +23,10 @@
         .container {
             width: 100%;
             max-width: 800px;
-            background: #000;
-            padding: 20px;
+            background: #1F1F1F; /* Fundo mais escuro */
+            padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 255, 0.3); /* Azul */
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Azul com mais contraste */
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -34,25 +34,25 @@
         }
         .logo {
             max-width: 100px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         h1 {
             color: #FFFF00; /* Amarelo */
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 2.5em; /* Maior tamanho de fonte */
+            margin-bottom: 30px;
         }
         textarea {
             width: 100%;
-            height: 150px;
-            border-radius: 5px;
-            border: 1px solid #0000FF; /* Azul */
-            padding: 10px;
+            height: 200px; /* Altura maior para melhor experiência de edição */
+            border-radius: 8px;
+            border: 2px solid #0000FF; /* Azul */
+            padding: 15px;
             font-family: monospace;
-            font-size: 1em;
+            font-size: 1.1em;
             resize: vertical;
             background-color: #333; /* Preto mais claro */
             color: #FFFF00; /* Amarelo */
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             outline: none;
             transition: border-color 0.3s ease;
         }
@@ -64,14 +64,14 @@
         }
         button {
             background-color: #0000FF; /* Azul */
-            color: #000; /* Preto */
-            padding: 15px 30px;
+            color: #fff; /* Texto branco */
+            padding: 18px 40px; /* Maior padding para destaque */
             border: none;
             border-radius: 50px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 1.1em;
             transition: background-color 0.3s ease;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             outline: none;
         }
         button:hover {
@@ -82,33 +82,32 @@
         }
         .output {
             background: #333; /* Preto mais claro */
-            padding: 15px;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 8px;
             color: #FFFF00; /* Amarelo */
             width: 100%;
             max-height: 300px;
             overflow-y: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             text-align: left;
         }
         .error-message {
             color: #FF3333;
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 1em;
+            margin-top: 20px; /* Espaçamento maior para mensagem de erro */
         }
         @media (max-width: 600px) {
             .container {
-                padding: 15px;
+                padding: 20px;
             }
             textarea {
-                font-size: 0.9em;
+                height: 150px; /* Altura menor para dispositivos móveis */
             }
             button {
-                padding: 10px 20px;
-                font-size: 0.9em;
+                padding: 15px 30px; /* Ajuste de padding para dispositivos móveis */
             }
             h1 {
-                font-size: 1.5em;
+                font-size: 2em; /* Redução do tamanho de fonte para dispositivos móveis */
             }
         }
     </style>
